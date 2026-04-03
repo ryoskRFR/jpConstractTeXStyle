@@ -8,6 +8,195 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{jpConstract}[2026/04/04 Japanese Contract Style]
 
+% ========== 必要なパッケージ ==========
+\RequirePackage{geometry}
+
+% ========== ここ不要かも ==========
+% % 画像
+% \usepackage[dvipdfmx]{graphicx}
+% 数式
+\RequirePackage{amsmath}
+% \usepackage{amsfonts}
+% \usepackage{amssymb}
+% \usepackage{bm}
+
+\RequirePackage{booktabs}
+\RequirePackage{array}
+\RequirePackage{tabularx}
+\RequirePackage{enumitem}
+
+%% ===== オプション処理 =====
+%% \usepackage[a4paper]{keiyaku} などに対応
+
+\newif\if@keiyaku@twoside
+\@keiyaku@twosidefalse
+
+\DeclareOption{twoside}{\@keiyaku@twosidetrue}
+\DeclareOption{oneside}{\@keiyaku@twosidefalse}
+\ProcessOptions\relax
+
+% ========== page layout ==========
+\geometry{
+  a4paper,
+  top=25truemm,bottom=25truemm,left=19truemm,right=19truemm
+}
+
+% ========== counter ==========
+\newcounter{shou}
+\newcounter{jou}          % 条
+\newcounter{kou}[jou]     % 項（条がリセットされると項もリセット）
+\newbox\koupendingbox     % 1項目の内容を一時保留するボックス
+\newcounter{gou}[kou]     % 号（項がリセットされると号もリセット）
+
+%% ===== 題名 =====
+\newcommand{\keiyakutitle}[1]{%
+  \begin{center}
+    {\Large\bfseries #1}%
+  \end{center}%
+  \vspace{1em}%
+}
+
+%% ===== 副題（例：「令和○年○月○日締結」） =====
+\newcommand{\keiyakudate}[1]{%
+  \begin{center}
+    #1%
+  \end{center}%
+  \vspace{0.5em}%
+}
+
+%% ===== 前文 =====
+\newcommand{\maebun}[1]{%
+  \noindent #1\par
+  \vspace{1em}%
+}
+
+%% ===== 号 =====
+%% 使い方: \gou{システムの設計...}
+\newcommand{\gou}[1]{%
+  \stepcounter{gou}%
+  \noindent\hspace{3zw}（\arabic{gou}）\quad #1\par
+}
+
+%% ===== 項 =====
+% %% 使い方: \kou{甲は乙に対し...}
+% \newcommand{\kou}[1]{%
+%   \stepcounter{kou}%
+%   \noindent\hspace{1zw}\arabic{kou}\quad #1\par
+% }
+
+% %% 項が1つだけの場合（番号なし本文）
+% %% 使い方: \honbun{甲は乙に対し...}
+% \newcommand{\honbun}[1]{%
+%   \noindent\hspace{1zw}#1\par
+% }
+
+\newcommand{\kou}[1]{%
+  \stepcounter{kou}%
+  \ifnum\value{kou}=1
+    %% 1項目：まだ出力せず保留
+    \global\setbox\koupendingbox=\hbox{\parbox{\dimexpr\linewidth-1zw}{%
+      \noindent #1\par
+    }}%
+  \else
+    \ifnum\value{kou}=2
+      %% 2項目が来た → 保留していた1項を番号付きで出力
+      \noindent\hspace{1zw}１\quad\usebox\koupendingbox\par
+    \fi
+    %% 2項目以降は通常出力
+    \noindent\hspace{1zw}\arabic{kou}\quad #1\par
+  \fi
+}
+
+%% 条が変わる前に保留中の1項を番号なしで吐き出す後処理
+%% \jou の先頭で呼ぶ
+\newcommand{\flushkou}{%
+  \ifnum\value{kou}>0
+    \ifnum\value{kou}=1
+      %% 結局1項だけだった → 番号なしで出力
+      \noindent\hspace{1zw}\usebox\koupendingbox\par
+    \fi
+  \fi
+}
+
+% ========== 条 ==========
+%% 使い方: \jou{目的}
+\newcommand{\jou}[1]{%
+  \stepcounter{jou}%
+  \vspace{0.8em}%
+  \noindent{\bfseries 第\arabic{jou}条}\quad{\bfseries （#1）}\par
+}
+
+%% 条番号を手動指定したい場合
+%% 使い方: \jounum{10}{権利譲渡の禁止}
+\newcommand{\jounum}[2]{%
+  \setcounter{jou}{#1}%
+  \addtocounter{jou}{-1}%
+  \jou{#2}%
+}
+
+%% ===== 章（複数の条をまとめる場合） =====
+\newcommand{\shou}[1]{%
+  \stepcounter{shou}%
+  \vspace{1em}%
+  \begin{center}
+    {\large \bfseries 第\arabic{shou}章\quad #1}%
+  \end{center}%
+  \vspace{0.5em}%
+}
+
+%% ===== ただし書き =====
+\newcommand{\tadashi}[1]{%
+  \noindent\hspace{1zw}ただし、#1\par
+}
+
+%% ===== なお書き =====
+\newcommand{\nao}[1]{%
+  \noindent\hspace{1zw}なお、#1\par
+}
+
+%% ===== 備考・注釈 =====
+\newcommand{\biko}[1]{%
+  \noindent\hspace{1zw}{\small ※\,#1}\par
+}
+
+%% ===== 後文 =====
+\newcommand{\gobun}[1]{%
+  \vspace{2em}%
+  \noindent #1\par
+}
+
+%% ===== 締結日 =====
+\newcommand{\teiketsudate}[1]{%
+  \vspace{1em}%
+  \noindent #1\par
+}
+
+%% ===== 署名欄 =====
+%% 使い方: \shomei{甲}{発注者}
+\newcommand{\shomei}[2]{%
+  \vspace{1em}%
+  \noindent\begin{tabularx}{\linewidth}{@{}lX@{}}
+    \multicolumn{2}{@{}l@{}}{\bfseries #1（#2）} \\[0.8em]
+    住\hspace{1zw}所 & \hrulefill \\[1.2em]
+    氏\hspace{1zw}名 & \hrulefill \\[1.2em]
+    日\hspace{1zw}付 & \hrulefill \\[0.8em]
+  \end{tabularx}%
+}
+
+%% ===== 別表見出し =====
+%% 使い方: \beppyo{1}{委託業務の内容}
+\newcommand{\beppyo}[2]{%
+  \vspace{2em}%
+  \begin{center}
+    {\large\bfseries 別表第#1\quad #2}%
+  \end{center}%
+  \vspace{0.5em}%
+}
+
+% ===================================
+% OLD VERSION
+% ===================================
+
 % ----- 前文 -----
 % ----- 章 chapter  -----
 \newcounter{rulechapter}
@@ -68,3 +257,5 @@
   \text{\ignorespaces#1}
   \par\vspace{1em}% 改行して余白を追加
 }
+
+\endinput
