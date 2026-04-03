@@ -100,7 +100,7 @@
   \else
     \ifnum\value{kou}=2
       %% 2項目が来た → 保留していた1項を番号付きで出力
-      \noindent\hspace{1zw}１\quad\usebox\koupendingbox\par
+      \noindent\hspace{1zw}1\quad\usebox\koupendingbox\par
     \fi
     %% 2項目以降は通常出力
     \noindent\hspace{1zw}\arabic{kou}\quad #1\par
@@ -121,6 +121,7 @@
 % ========== 条 ==========
 %% 使い方: \jou{目的}
 \newcommand{\jou}[1]{%
+  \flushkou
   \stepcounter{jou}%
   \vspace{0.8em}%
   \noindent{\bfseries 第\arabic{jou}条}\quad{\bfseries （#1）}\par
@@ -138,11 +139,17 @@
 \newcommand{\shou}[1]{%
   \stepcounter{shou}%
   \vspace{1em}%
-  \begin{center}
-    {\large \bfseries 第\arabic{shou}章\quad #1}%
-  \end{center}%
+  \hspace{3zw}\large\bfseries 第\arabic{shou}章\quad #1%
   \vspace{0.5em}%
+  \par
 }
+
+%%%%%% 下方にある章から例としてとってきた
+% \refstepcounter{rulechapter}% カウンタを進める
+%   \noindent % インデントを無効化
+%   \Large % 大きめの文字サイズ
+%   \textbf{第\arabic{rulechapter}章\hspace{1em}#1}% 太字で"第N章 タイトル"を出力
+%   \par\vspace{1em}% 改行して余白を追加
 
 %% ===== ただし書き =====
 \newcommand{\tadashi}[1]{%

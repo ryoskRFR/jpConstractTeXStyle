@@ -1,11 +1,11 @@
 # Fdb version 4
-["dvipdf"] 1775235984.15718 "example_out/example.dvi" "example_out/example.pdf" "example_out/example" 1775235984.97953 0
-  "example_out/example.dvi" 1775235984 2840 8848b5bf86a69e3798c0ee55ec47fcc3 "latex"
+["dvipdf"] 1775237418.78219 "example_out/example.dvi" "example_out/example.pdf" "example_out/example" 1775237419.63314 0
+  "example_out/example.dvi" 1775237418 3012 0d13fdf233cb09e8a2bf53594879d47a "latex"
   (generated)
   "example_out/example.pdf"
   (rewritten before read)
-["latex"] 1775235983.41558 "c:/Users/theif/Documents/tex_style/jpConstractTeXStyle/example.tex" "example_out/example.dvi" "example" 1775235984.97738 0
-  "c:/Users/theif/Documents/tex_style/jpConstractTeXStyle/example.tex" 1775235982 2034 a83341705c036c0ed3c61d4c1ceaca80 ""
+["latex"] 1775237418.06144 "c:/Users/theif/Documents/tex_style/jpConstractTeXStyle/example.tex" "example_out/example.dvi" "example" 1775237419.63108 0
+  "c:/Users/theif/Documents/tex_style/jpConstractTeXStyle/example.tex" 1775237417 2334 b1a98362292e1b4b851ff384d46e6814 ""
   "c:/texlive/2026/texmf-dist/fonts/map/fontname/texfonts.map" 1775214445 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2026/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1775216817 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/texlive/2026/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm" 1775216817 468 53f854284f6afa6c36aaa2d1090ecc12 ""
@@ -48,9 +48,9 @@
   "c:/texlive/2026/texmf-dist/web2c/texmf.cnf" 1775212766 43630 e9fa012910491fe5ae08a72c3c2997a7 ""
   "c:/texlive/2026/texmf-var/web2c/euptex/platex.fmt" 1775218577 3652305 a12332408876bc7667020b5cf5eb4baf ""
   "c:/texlive/2026/texmf.cnf" 1775218359 713 e69b156964470283e0530f5060668171 ""
-  "example.tex" 1775235982 2034 a83341705c036c0ed3c61d4c1ceaca80 ""
-  "example_out/example.aux" 1775235984 374 e6a105830689289920547d951fd23f59 "latex"
-  "jpConstract.sty" 1775235910 6876 daa0c17e3c433f5d0f8b628e64c1c056 ""
+  "example.tex" 1775237417 2334 b1a98362292e1b4b851ff384d46e6814 ""
+  "example_out/example.aux" 1775237418 374 e6a105830689289920547d951fd23f59 "latex"
+  "jpConstract.sty" 1775237414 7222 596694071cf855be1852de243bcce2a7 ""
   (generated)
   "example_out/example.aux"
   "example_out/example.dvi"

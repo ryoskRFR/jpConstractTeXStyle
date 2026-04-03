@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.02-251130-2.6 (utf8.sjis) (TeX Live 2026) (preloaded format=platex 2026.4.3)  4 APR 2026 02:06
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.02-251130-2.6 (utf8.sjis) (TeX Live 2026) (preloaded format=platex 2026.4.3)  4 APR 2026 02:30
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -271,54 +271,49 @@ LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 LaTeX Warning: No \author given.
 
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 12.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 13.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 12.
+(Font)              scaled to size 11.53198pt on input line 13.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 12.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 13.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 12.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 14.
-LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 14.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 14.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 14.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 17.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 17.
+(Font)              scaled to size 11.53198pt on input line 13.
 
-Overfull \hbox (19.24689pt too wide) in paragraph at lines 18--18
- \JY1/mc/m/n/10 １ [] 
+Overfull \hbox (20.25pt too wide) in paragraph at lines 19--19
+ \OT1/cmr/bx/n/12 1 [] 
  []
 
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 24.
+(Font)              scaled to size 13.83836pt on input line 29.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 24.
+(Font)              scaled to size 13.83836pt on input line 29.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 24.
+(Font)              scaled to size 13.83836pt on input line 29.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 24.
+(Font)              scaled to size 13.83836pt on input line 29.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 28.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 33.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 28.
+(Font)              scaled to size 13.83836pt on input line 33.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 28.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 33.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 28.
-
-Overfull \hbox (315.42938pt too wide) in paragraph at lines 38--38
-[][] [] 
- []
-
+(Font)              scaled to size 13.83836pt on input line 33.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 38.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 38.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 38.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 38.
 [1
 
 ]
+Overfull \hbox (321.2346pt too wide) in paragraph at lines 43--43
+[][] [] 
+ []
+
 ***** List of packages loaded by `plautopatch': *****
  plarray.
 *****************************************************
@@ -330,12 +325,12 @@ L3 programming layer <2026-03-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 2882 strings out of 467995
- 47418 string characters out of 5434491
- 468808 words of memory out of 5000000
- 31976 multiletter control sequences out of 15000+600000
- 639806 words of font info for 96 fonts, out of 8000000 for 9000
+ 2880 strings out of 467995
+ 47390 string characters out of 5434491
+ 468795 words of memory out of 5000000
+ 31974 multiletter control sequences out of 15000+600000
+ 639168 words of font info for 92 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  72i,6n,79p,349b,250s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on example_out/example.dvi (2 pages, 2840 bytes).
+Output written on example_out/example.dvi (2 pages, 3012 bytes).
