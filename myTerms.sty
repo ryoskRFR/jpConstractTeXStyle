@@ -1,0 +1,70 @@
+% keiyaku.sty
+% 日本語の契約書・条文用のtexスタイルファイル
+% 対応エンジン: platex / uplatex
+
+% 後でこのstyファイルを usr/local/texlive/2023/texmf-dist/tex/platex/ 
+% の下にフォルダを作って引っ越し
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{myTerms}[2025/01/15 Japanese Contract Style]
+
+% ----- 前文 -----
+% ----- 章 chapter  -----
+\newcounter{rulechapter}
+\newcommand{\rulechapter}[1]{%
+  \refstepcounter{rulechapter}% カウンタを進める
+  \noindent % インデントを無効化
+  \Large % 大きめの文字サイズ
+  \textbf{第\arabic{rulechapter}章\hspace{1em}#1}% 太字で"第N章 タイトル"を出力
+  \par\vspace{1em}% 改行して余白を追加
+}
+
+% ----- 条 article  -----
+\newcounter{rulearticle}
+\newcommand{\rulearticle}[1]{%
+  \refstepcounter{rulearticle}% カウンタを進める
+  \noindent % インデントを無効化
+  \large % 大きめの文字サイズ
+  \textbf{第\arabic{rulearticle}条\hspace{1em}#1}% 太字で"第N条 タイトル"を出力
+  \par\vspace{1em}% 改行して余白を追加
+}
+
+% ----- 項 Pragraph -----
+\newcounter{ruleparagraph}[rulearticle]
+\newcommand{\ruleparagraph}[1]{%
+  \refstepcounter{ruleparagraph}% カウンタを進める
+  \indent
+  \normalsize
+  \text{\arabic{ruleparagraph}.} % 項番号
+  \text{\ignorespaces#1}
+  \par\vspace{1em}% 改行して余白を追加
+}
+
+% ----- 号 Item     -----
+\newcounter{ruleitem}[ruleparagraph]
+\newcommand{\ruleitem}[1]{%
+  \refstepcounter{ruleitem}% カウンタを進める
+  \hspace{2\parindent}
+  \normalsize
+  \text{(\arabic{ruleitem})\hspace{1em}#1}% 太字で"第N章 タイトル"を出力
+  \par\vspace{0.5em}% 改行して余白を追加
+}
+
+% ----- 附則 -----
+\newenvironment{Fusoku}{
+  \begingroup\par
+  \noindent
+  \large
+  \textbf{附則}
+  \par
+}{\endgroup \par}
+
+\newcounter{fusokuNum}
+\newcommand{\fusoku}[1]{%
+  \refstepcounter{fusokuNum}% カウンタを進める
+  \indent
+  \normalsize
+  \text{\arabic{fusokuNum}.} % 項番号
+  \text{\ignorespaces#1}
+  \par\vspace{1em}% 改行して余白を追加
+}

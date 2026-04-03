@@ -1,0 +1,29 @@
+# Fdb version 4
+["dvipdf"] 1736920651.23639 "test_out/test.dvi" "test_out/test.pdf" "test_out/test" 1736920652.11454 0
+  "test_out/test.dvi" 1736920651 776 494ef895c102538f65968b454b7780e5 "latex"
+  (generated)
+  "test_out/test.pdf"
+  (rewritten before read)
+["latex"] 1736920650.53009 "c:/Users/Ryosuke/Documents/VSCode/myTermsEditor/test.tex" "test_out/test.dvi" "test" 1736920652.11372 0
+  "c:/Users/Ryosuke/Documents/VSCode/myTermsEditor/test.tex" 1736920649 438 6a165293a9dbfab62a8bd0a136f67887 ""
+  "c:/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1731298720 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "c:/texlive/2024/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1731299943 468 53f854284f6afa6c36aaa2d1090ecc12 ""
+  "c:/texlive/2024/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm" 1731299943 468 53f854284f6afa6c36aaa2d1090ecc12 ""
+  "c:/texlive/2024/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm" 1731299943 856 7404843a5f798859944d7973a47821d5 ""
+  "c:/texlive/2024/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm" 1731299943 856 39c171483fe1bb7d0e1368980c0c205b ""
+  "c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1731298262 1288 655e228510b4c2a1abe905c368440826 ""
+  "c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1731298262 1292 21c1c5bfeaebccffdb478fd231a0997d ""
+  "c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmss12.tfm" 1731298262 1324 37b971caf729d7edd9cbb9f9b0ea76eb ""
+  "c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-dvips.def" 1731299111 35454 e0048b54d7d6f7c79a7bd63a786c3eee ""
+  "c:/texlive/2024/texmf-dist/tex/platex/jsclasses/jsarticle.cls" 1731299039 61387 1c16fa09f9aa344f6b7ed4a7e2c399b2 ""
+  "c:/texlive/2024/texmf-dist/tex/platex/jsclasses/jslogo.sty" 1731299039 5585 8e4615c54073c390d14154b29cee89cb ""
+  "c:/texlive/2024/texmf-dist/web2c/texmf.cnf" 1731297832 42021 a58d36c7ede3d2fc9f93da62d691ddff ""
+  "c:/texlive/2024/texmf-var/web2c/euptex/platex.fmt" 1731300897 3285373 28babcb26a80420696f0bf6128d726d4 ""
+  "c:/texlive/2024/texmf.cnf" 1731300753 713 e69b156964470283e0530f5060668171 ""
+  "test.tex" 1736920649 438 6a165293a9dbfab62a8bd0a136f67887 ""
+  "test_out/test.aux" 1736920651 374 2ba16a0f2f4bfb46ab52f362d45574e5 "latex"
+  (generated)
+  "test_out/test.aux"
+  "test_out/test.dvi"
+  "test_out/test.log"
+  (rewritten before read)
