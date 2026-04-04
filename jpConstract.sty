@@ -2,7 +2,7 @@
 % 日本語の契約書・条文用のtexスタイルファイル
 % 対応エンジン: platex / uplatex
 
-% 後でこのstyファイルを usr/local/texlive/2023/texmf-dist/tex/platex/ 
+% 後でこのstyファイルを usr/local/texlive/20XX/texmf-dist/tex/platex/ 
 % の下にフォルダを作って引っ越し
 
 \NeedsTeXFormat{LaTeX2e}
@@ -78,18 +78,21 @@
 
 %% ===== 項 =====
 %% 使い方（項番号あり）: \kou{甲は乙に対し...}
-%% 使い方（項番号なし）: \kou[]{甲は乙に対し...}
-\newcommand{\kou}[2][NOOPT]{
-  \def\kouopt{#1}%
-  \def\kounoopt{NOOPT}%
+%% 使い方（項番号なし）: \kou*{甲は乙に対し...}
+\newcommand{\kou}{%
   \stepcounter{kou}%
-  \ifx\kouopt\kounoopt
-    % オプションなし → 番号あり
-    \noindent\hspace{1zw}\arabic{kou}\quad #2\par
-  \else
-    % オプションあり（空含む） → 番号なし
-    \noindent\hspace{1zw}#2\par
-  \fi
+
+  \@ifstar
+    {\kou@star}%
+    {\kou@nostar}%
+}
+
+\newcommand{\kou@star}[1]{
+  \noindent\hspace{1zw}#1\par
+}
+
+\newcommand{\kou@nostar}[1]{
+  \noindent\hspace{1zw}\arabic{kou}\quad#1\par
 }
 
 % ========== 条 ==========
