@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.02-251130-2.6 (utf8.sjis) (TeX Live 2026) (preloaded format=platex 2026.4.3)  4 APR 2026 02:30
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.02-251130-2.6 (utf8.sjis) (TeX Live 2026) (preloaded format=platex 2026.4.3)  4 APR 2026 14:34
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -188,7 +188,6 @@ Package: enumitem 2025/02/06 v3.11 Customized lists
 \c@shou=\count305
 \c@jou=\count306
 \c@kou=\count307
-\koupendingbox=\box76
 \c@gou=\count308
 \c@rulechapter=\count309
 \c@rulearticle=\count310
@@ -197,8 +196,8 @@ Package: enumitem 2025/02/06 v3.11 Customized lists
 \c@fusokuNum=\count313
 ) (c:/texlive/2026/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
 File: l3backend-dvips.def 2026-02-18 L3 backend support: dvips
-\l__pdfannot_backend_content_box=\box77
-\l__pdfannot_backend_model_box=\box78
+\l__pdfannot_backend_content_box=\box76
+\l__pdfannot_backend_model_box=\box77
 \g__pdfannot_backend_int=\count314
 \g__pdfannot_backend_link_int=\count315
 \g__pdfannot_backend_link_sf_int=\count316
@@ -278,46 +277,12 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 13.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 11.53198pt on input line 13.
-
-Overfull \hbox (20.25pt too wide) in paragraph at lines 19--19
- \OT1/cmr/bx/n/12 1 [] 
- []
-
-LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 29.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 29.
-LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 29.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 29.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 33.
-LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 33.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 33.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 33.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 38.
-LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 38.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 38.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 38.
-[1
-
-]
-Overfull \hbox (321.2346pt too wide) in paragraph at lines 43--43
-[][] [] 
- []
-
 ***** List of packages loaded by `plautopatch': *****
  plarray.
 *****************************************************
-[2] (example_out/example.aux)
+[1
+
+] (example_out/example.aux)
  ***********
 pLaTeX2e <2023-02-14>+1, based on
 LaTeX2e <2025-11-01>
@@ -325,12 +290,12 @@ L3 programming layer <2026-03-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 2880 strings out of 467995
- 47390 string characters out of 5434491
- 468795 words of memory out of 5000000
- 31974 multiletter control sequences out of 15000+600000
- 639168 words of font info for 92 fonts, out of 8000000 for 9000
+ 2862 strings out of 467995
+ 47103 string characters out of 5434491
+ 466748 words of memory out of 5000000
+ 31958 multiletter control sequences out of 15000+600000
+ 637105 words of font info for 82 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 72i,6n,79p,349b,250s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,6n,79p,262b,250s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on example_out/example.dvi (2 pages, 3012 bytes).
+Output written on example_out/example.dvi (1 page, 1392 bytes).

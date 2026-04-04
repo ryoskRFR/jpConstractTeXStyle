@@ -1,11 +1,11 @@
 # Fdb version 4
-["dvipdf"] 1775237418.78219 "example_out/example.dvi" "example_out/example.pdf" "example_out/example" 1775237419.63314 0
-  "example_out/example.dvi" 1775237418 3012 0d13fdf233cb09e8a2bf53594879d47a "latex"
+["dvipdf"] 1775280886.31632 "example_out/example.dvi" "example_out/example.pdf" "example_out/example" 1775280887.13609 0
+  "example_out/example.dvi" 1775280886 1392 206de9970729aede8056813254d0ddf1 "latex"
   (generated)
   "example_out/example.pdf"
   (rewritten before read)
-["latex"] 1775237418.06144 "c:/Users/theif/Documents/tex_style/jpConstractTeXStyle/example.tex" "example_out/example.dvi" "example" 1775237419.63108 0
-  "c:/Users/theif/Documents/tex_style/jpConstractTeXStyle/example.tex" 1775237417 2334 b1a98362292e1b4b851ff384d46e6814 ""
+["latex"] 1775280885.59351 "c:/Users/theif/Documents/tex_style/jpConstractTeXStyle/example.tex" "example_out/example.dvi" "example" 1775280887.13408 0
+  "c:/Users/theif/Documents/tex_style/jpConstractTeXStyle/example.tex" 1775280884 2655 1bbd65e058ed21aed98ad91cbbcb3ccb ""
   "c:/texlive/2026/texmf-dist/fonts/map/fontname/texfonts.map" 1775214445 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2026/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1775216817 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/texlive/2026/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm" 1775216817 468 53f854284f6afa6c36aaa2d1090ecc12 ""
@@ -13,7 +13,6 @@
   "c:/texlive/2026/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm" 1775216817 856 39c171483fe1bb7d0e1368980c0c205b ""
   "c:/texlive/2026/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1775212876 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2026/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1775212876 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
-  "c:/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1775213589 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "c:/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1775213589 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "c:/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmex10.tfm" 1775213589 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
   "c:/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1775213589 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -23,7 +22,6 @@
   "c:/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmr17.tfm" 1775213589 1292 296a67155bdbfc32aa9c636f21e91433 ""
   "c:/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmr6.tfm" 1775213589 1300 b62933e007d01cfd073f79b963c01526 ""
   "c:/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1775213589 1292 21c1c5bfeaebccffdb478fd231a0997d ""
-  "c:/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmss12.tfm" 1775213589 1324 37b971caf729d7edd9cbb9f9b0ea76eb ""
   "c:/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1775213589 1124 6c73e740cf17375f03eec0ee63599741 ""
   "c:/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1775213589 1116 933a60c408fc0a863a92debe84b2d294 ""
   "c:/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1775213589 1120 8b7d695260f3cff42e636090a8002094 ""
@@ -48,9 +46,9 @@
   "c:/texlive/2026/texmf-dist/web2c/texmf.cnf" 1775212766 43630 e9fa012910491fe5ae08a72c3c2997a7 ""
   "c:/texlive/2026/texmf-var/web2c/euptex/platex.fmt" 1775218577 3652305 a12332408876bc7667020b5cf5eb4baf ""
   "c:/texlive/2026/texmf.cnf" 1775218359 713 e69b156964470283e0530f5060668171 ""
-  "example.tex" 1775237417 2334 b1a98362292e1b4b851ff384d46e6814 ""
-  "example_out/example.aux" 1775237418 374 e6a105830689289920547d951fd23f59 "latex"
-  "jpConstract.sty" 1775237414 7222 596694071cf855be1852de243bcce2a7 ""
+  "example.tex" 1775280884 2655 1bbd65e058ed21aed98ad91cbbcb3ccb ""
+  "example_out/example.aux" 1775280886 32 3985256e7290058c681f74d7a3565a19 "latex"
+  "jpConstract.sty" 1775280522 6092 d09ce9dd0a7d827f9e911b2dc8747012 ""
   (generated)
   "example_out/example.aux"
   "example_out/example.dvi"

@@ -45,7 +45,6 @@
 \newcounter{shou}
 \newcounter{jou}          % 条
 \newcounter{kou}[jou]     % 項（条がリセットされると項もリセット）
-\newbox\koupendingbox     % 1項目の内容を一時保留するボックス
 \newcounter{gou}[kou]     % 号（項がリセットされると号もリセット）
 
 %% ===== 題名 =====
@@ -78,50 +77,35 @@
 }
 
 %% ===== 項 =====
-% %% 使い方: \kou{甲は乙に対し...}
-% \newcommand{\kou}[1]{%
-%   \stepcounter{kou}%
-%   \noindent\hspace{1zw}\arabic{kou}\quad #1\par
-% }
-
-% %% 項が1つだけの場合（番号なし本文）
-% %% 使い方: \honbun{甲は乙に対し...}
-% \newcommand{\honbun}[1]{%
-%   \noindent\hspace{1zw}#1\par
-% }
-
-\newcommand{\kou}[1]{%
+%% 使い方（項番号あり）: \kou{甲は乙に対し...}
+%% 使い方（項番号なし）: \kou[]{甲は乙に対し...}
+\newcommand{\kou}[2][NOOPT]{
+  \def\kouopt{#1}%
+  \def\kounoopt{NOOPT}%
   \stepcounter{kou}%
-  \ifnum\value{kou}=1
-    %% 1項目：まだ出力せず保留
-    \global\setbox\koupendingbox=\hbox{\parbox{\dimexpr\linewidth-1zw}{%
-      \noindent #1\par
-    }}%
+  \ifx\kouopt\kounoopt
+    % オプションなし → 番号あり
+    \noindent\hspace{1zw}\arabic{kou}\quad #2\par
   \else
-    \ifnum\value{kou}=2
-      %% 2項目が来た → 保留していた1項を番号付きで出力
-      \noindent\hspace{1zw}1\quad\usebox\koupendingbox\par
-    \fi
-    %% 2項目以降は通常出力
-    \noindent\hspace{1zw}\arabic{kou}\quad #1\par
-  \fi
-}
-
-%% 条が変わる前に保留中の1項を番号なしで吐き出す後処理
-%% \jou の先頭で呼ぶ
-\newcommand{\flushkou}{%
-  \ifnum\value{kou}>0
-    \ifnum\value{kou}=1
-      %% 結局1項だけだった → 番号なしで出力
-      \noindent\hspace{1zw}\usebox\koupendingbox\par
-    \fi
+    % オプションあり（空含む） → 番号なし
+    \noindent\hspace{1zw}#2\par
   \fi
 }
 
 % ========== 条 ==========
 %% 使い方: \jou{目的}
+\newcommand{\jou}[2][NOOPT]{
+  \def\jouopt{#1}
+  \def\jounoopt{NOOPT}
+  \stepcounter{jou}
+  \vspace{0.8em}
+
+  \ifx\jouopt\jounoopt
+    \noindent\hspace{l}
+}
+
+
 \newcommand{\jou}[1]{%
-  \flushkou
   \stepcounter{jou}%
   \vspace{0.8em}%
   \noindent{\bfseries 第\arabic{jou}条}\quad{\bfseries （#1）}\par
@@ -143,13 +127,6 @@
   \vspace{0.5em}%
   \par
 }
-
-%%%%%% 下方にある章から例としてとってきた
-% \refstepcounter{rulechapter}% カウンタを進める
-%   \noindent % インデントを無効化
-%   \Large % 大きめの文字サイズ
-%   \textbf{第\arabic{rulechapter}章\hspace{1em}#1}% 太字で"第N章 タイトル"を出力
-%   \par\vspace{1em}% 改行して余白を追加
 
 %% ===== ただし書き =====
 \newcommand{\tadashi}[1]{%
