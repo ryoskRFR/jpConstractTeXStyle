@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.02-251130-2.6 (utf8.sjis) (TeX Live 2026) (preloaded format=platex 2026.4.3)  4 APR 2026 16:16
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.02-251130-2.6 (utf8.sjis) (TeX Live 2026) (preloaded format=platex 2026.4.3)  4 APR 2026 17:23
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -189,18 +189,14 @@ Package: enumitem 2025/02/06 v3.11 Customized lists
 \c@jou=\count306
 \c@kou=\count307
 \c@gou=\count308
-\c@rulechapter=\count309
-\c@rulearticle=\count310
-\c@ruleparagraph=\count311
-\c@ruleitem=\count312
-\c@fusokuNum=\count313
+\c@fusokuNum=\count309
 ) (c:/texlive/2026/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
 File: l3backend-dvips.def 2026-02-18 L3 backend support: dvips
 \l__pdfannot_backend_content_box=\box76
 \l__pdfannot_backend_model_box=\box77
-\g__pdfannot_backend_int=\count314
-\g__pdfannot_backend_link_int=\count315
-\g__pdfannot_backend_link_sf_int=\count316
+\g__pdfannot_backend_int=\count310
+\g__pdfannot_backend_link_int=\count311
+\g__pdfannot_backend_link_sf_int=\count312
 ) (example_out/example.aux)
 \openout1 = `example.aux'.
 
@@ -231,14 +227,14 @@ LaTeX Font Info:    ... okay on input line 9.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(49.37006pt, 498.76776pt, 49.37006pt)
-* v-part:(T,H,B)=(64.96059pt, 715.12567pt, 64.96059pt)
+* v-part:(T,H,B)=(51.96848pt, 728.11778pt, 64.96059pt)
 * \paperwidth=654.26651pt
 * \paperheight=925.30975pt
 * \textwidth=498.76776pt
-* \textheight=715.12567pt
+* \textheight=728.11778pt
 * \oddsidemargin=-22.89993pt
 * \evensidemargin=-22.89993pt
-* \topmargin=-40.53754pt
+* \topmargin=-53.52965pt
 * \headheight=20.0pt
 * \headsep=13.22813pt
 * \topskip=12.76073pt
@@ -257,26 +253,29 @@ LaTeX Font Info:    ... okay on input line 9.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 10.
+(Font)              scaled to size 16.60605pt on input line 11.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 10.
-LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 10.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 10.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 10.
-
-LaTeX Warning: No \author given.
-
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 13.
+(Font)              scaled to size 16.60605pt on input line 11.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 11.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 13.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 13.
+(Font)              scaled to size 16.60605pt on input line 11.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 11.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 13.
+(Font)              scaled to size 16.60605pt on input line 11.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 11.53198pt on input line 16.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 11.53198pt on input line 16.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 16.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 11.53198pt on input line 16.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 16.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 11.53198pt on input line 16.
 ***** List of packages loaded by `plautopatch': *****
  plarray.
 *****************************************************
@@ -290,12 +289,12 @@ L3 programming layer <2026-03-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 2863 strings out of 467995
- 47115 string characters out of 5434491
- 466751 words of memory out of 5000000
- 31959 multiletter control sequences out of 15000+600000
- 637105 words of font info for 82 fonts, out of 8000000 for 9000
+ 2827 strings out of 467995
+ 46753 string characters out of 5434491
+ 469394 words of memory out of 5000000
+ 31931 multiletter control sequences out of 15000+600000
+ 634788 words of font info for 74 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 72i,6n,79p,262b,250s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,5n,79p,362b,199s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on example_out/example.dvi (1 page, 1348 bytes).
+Output written on example_out/example.dvi (1 page, 2764 bytes).

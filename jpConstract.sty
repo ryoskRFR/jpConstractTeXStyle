@@ -38,7 +38,7 @@
 % ========== page layout ==========
 \geometry{
   a4paper,
-  top=25truemm,bottom=25truemm,left=19truemm,right=19truemm
+  top=20truemm,bottom=25truemm,left=19truemm,right=19truemm
 }
 
 % ========== counter ==========
@@ -50,16 +50,16 @@
 %% ===== 題名 =====
 \newcommand{\keiyakutitle}[1]{%
   \begin{center}
-    {\Large\bfseries #1}%
+    {\LARGE\bfseries #1}%
   \end{center}%
   \vspace{1em}%
 }
 
 %% ===== 副題（例：「令和○年○月○日締結」） =====
 \newcommand{\keiyakudate}[1]{%
-  \begin{center}
+  \begin{flushright}
     #1%
-  \end{center}%
+  \end{flushright}%
   \vspace{0.5em}%
 }
 
@@ -69,11 +69,32 @@
   \vspace{1em}%
 }
 
-%% ===== 号 =====
-%% 使い方: \gou{システムの設計...}
-\newcommand{\gou}[1]{%
-  \stepcounter{gou}%
-  \noindent\hspace{3zw}（\arabic{gou}）\quad #1\par
+%% ===== 章（複数の条をまとめる場合） =====
+\newcommand{\shou}[1]{%
+  \stepcounter{shou}%
+  \vspace{1em}%
+  \hspace{3zw}\large{\bfseries{ 第\arabic{shou}章\quad #1}}%
+  \vspace{0.5em}%
+  \par
+}
+
+% ========== 条 ==========
+%% 使い方
+%% 条番号を踏襲: \jou{条の題名}
+%% 条番号を指定: \jou[num]{条の題名}
+\newcommand{\jou}[2][NOOPT]{
+  \def\jouopt{#1}
+  \def\jounoopt{NOOPT}
+  \vspace{0.8em}
+
+  \ifx\jouopt\jounoopt
+    % オプションがないなら、番号を踏襲
+    \stepcounter{jou}
+  \else
+    % オプションの番号を指定して更新する
+    \setcounter{jou}{#1}
+  \fi
+  \noindent{\bfseries{第\arabic{jou}条}\quad{（#2）}}\par
 }
 
 %% ===== 項 =====
@@ -95,47 +116,29 @@
   \noindent\hspace{1zw}\arabic{kou}\quad#1\par
 }
 
-% ========== 条 ==========
-%% 使い方
-%% 条番号を踏襲: \jou{条の題名}
-%% 条番号を指定: \jou[num]{条の題名}
-\newcommand{\jou}[2][NOOPT]{
-  \def\jouopt{#1}
-  \def\jounoopt{NOOPT}
-  \vspace{0.8em}
-
-  \ifx\jouopt\jounoopt
-    % オプションがないなら、番号を踏襲
-    \stepcounter{jou}
-  \else
-    % オプションの番号を指定して更新する
-    \setcounter{jou}{#1}
-  \fi
-  \noindent{\bfseries 第\arabic{jou}条}\quad{\bfseries （#2）}\par
-}
-
-%% ===== 章（複数の条をまとめる場合） =====
-\newcommand{\shou}[1]{%
-  \stepcounter{shou}%
-  \vspace{1em}%
-  \hspace{3zw}\large\bfseries 第\arabic{shou}章\quad #1%
-  \vspace{0.5em}%
-  \par
+%% ===== 号 =====
+%% 使い方: \gou{システムの設計...}
+\newcommand{\gou}[1]{%
+  \stepcounter{gou}%
+  \noindent\hspace{3zw}（\arabic{gou}）\quad #1\par
 }
 
 %% ===== ただし書き =====
+% 必要があれば修正する。
 \newcommand{\tadashi}[1]{%
-  \noindent\hspace{1zw}ただし、#1\par
+  \noindent\hspace{1zw}\normalsize ただし、#1\par
 }
 
 %% ===== なお書き =====
+% 必要があれば修正する。
 \newcommand{\nao}[1]{%
-  \noindent\hspace{1zw}なお、#1\par
+  \noindent\hspace{1zw}\normalsize なお、#1\par
 }
 
 %% ===== 備考・注釈 =====
 \newcommand{\biko}[1]{%
-  \noindent\hspace{1zw}{\small ※\,#1}\par
+  \hspace{2zw}\large\textbf{【備考】}\par
+  \hspace{3zw}{\normalsize #1}\par
 }
 
 %% ===== 後文 =====
@@ -172,51 +175,12 @@
   \vspace{0.5em}%
 }
 
+% 別紙の機能も欲しい。
+% 改ページして、左上に（別紙１）みたいに書く。
+
 % ===================================
 % OLD VERSION
 % ===================================
-
-% ----- 前文 -----
-% ----- 章 chapter  -----
-\newcounter{rulechapter}
-\newcommand{\rulechapter}[1]{%
-  \refstepcounter{rulechapter}% カウンタを進める
-  \noindent % インデントを無効化
-  \Large % 大きめの文字サイズ
-  \textbf{第\arabic{rulechapter}章\hspace{1em}#1}% 太字で"第N章 タイトル"を出力
-  \par\vspace{1em}% 改行して余白を追加
-}
-
-% ----- 条 article  -----
-\newcounter{rulearticle}
-\newcommand{\rulearticle}[1]{%
-  \refstepcounter{rulearticle}% カウンタを進める
-  \noindent % インデントを無効化
-  \large % 大きめの文字サイズ
-  \textbf{第\arabic{rulearticle}条\hspace{1em}#1}% 太字で"第N条 タイトル"を出力
-  \par\vspace{1em}% 改行して余白を追加
-}
-
-% ----- 項 Pragraph -----
-\newcounter{ruleparagraph}[rulearticle]
-\newcommand{\ruleparagraph}[1]{%
-  \refstepcounter{ruleparagraph}% カウンタを進める
-  \indent
-  \normalsize
-  \text{\arabic{ruleparagraph}.} % 項番号
-  \text{\ignorespaces#1}
-  \par\vspace{1em}% 改行して余白を追加
-}
-
-% ----- 号 Item     -----
-\newcounter{ruleitem}[ruleparagraph]
-\newcommand{\ruleitem}[1]{%
-  \refstepcounter{ruleitem}% カウンタを進める
-  \hspace{2\parindent}
-  \normalsize
-  \text{(\arabic{ruleitem})\hspace{1em}#1}% 太字で"第N章 タイトル"を出力
-  \par\vspace{0.5em}% 改行して余白を追加
-}
 
 % ----- 附則 -----
 \newenvironment{Fusoku}{

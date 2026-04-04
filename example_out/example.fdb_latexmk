@@ -1,30 +1,20 @@
 # Fdb version 4
-["dvipdf"] 1775287006.30752 "example_out/example.dvi" "example_out/example.pdf" "example_out/example" 1775287007.11492 0
-  "example_out/example.dvi" 1775287006 1348 b27970c1b665463f79df9efdb32d91be "latex"
+["dvipdf"] 1775290985.2233 "example_out/example.dvi" "example_out/example.pdf" "example_out/example" 1775290986.1 0
+  "example_out/example.dvi" 1775290985 2764 6028615ae6827a2a2355e779a23446b5 "latex"
   (generated)
   "example_out/example.pdf"
   (rewritten before read)
-["latex"] 1775287005.58366 "c:/Users/theif/Documents/tex_style/jpConstractTeXStyle/example.tex" "example_out/example.dvi" "example" 1775287007.11283 0
-  "c:/Users/theif/Documents/tex_style/jpConstractTeXStyle/example.tex" 1775287004 2629 c4c90ae62aec9c0f1afd316028898795 ""
+["latex"] 1775290984.50028 "c:/Users/theif/Documents/tex_style/jpConstractTeXStyle/example.tex" "example_out/example.dvi" "example" 1775290986.0984 0
+  "c:/Users/theif/Documents/tex_style/jpConstractTeXStyle/example.tex" 1775290983 1900 10c8918b80d1493dad5eb7a50c76eb73 ""
   "c:/texlive/2026/texmf-dist/fonts/map/fontname/texfonts.map" 1775214445 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2026/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1775216817 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/texlive/2026/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm" 1775216817 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/texlive/2026/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm" 1775216817 856 7404843a5f798859944d7973a47821d5 ""
   "c:/texlive/2026/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm" 1775216817 856 39c171483fe1bb7d0e1368980c0c205b ""
-  "c:/texlive/2026/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1775212876 1004 54797486969f23fa377b128694d548df ""
-  "c:/texlive/2026/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1775212876 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "c:/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1775213589 1324 c910af8c371558dc20f2d7822f66fe64 ""
-  "c:/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmex10.tfm" 1775213589 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
-  "c:/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1775213589 1524 4414a8315f39513458b80dfc63bff03a ""
-  "c:/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1775213589 1512 f21f83efb36853c0b70002322c1ab3ad ""
-  "c:/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm" 1775213589 1520 eccf95517727cb11801f4f1aee3a21b4 ""
   "c:/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1775213589 1288 655e228510b4c2a1abe905c368440826 ""
   "c:/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmr17.tfm" 1775213589 1292 296a67155bdbfc32aa9c636f21e91433 ""
-  "c:/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmr6.tfm" 1775213589 1300 b62933e007d01cfd073f79b963c01526 ""
   "c:/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1775213589 1292 21c1c5bfeaebccffdb478fd231a0997d ""
-  "c:/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1775213589 1124 6c73e740cf17375f03eec0ee63599741 ""
-  "c:/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1775213589 1116 933a60c408fc0a863a92debe84b2d294 ""
-  "c:/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1775213589 1120 8b7d695260f3cff42e636090a8002094 ""
   "c:/texlive/2026/texmf-dist/tex/generic/iftex/iftex.sty" 1775214912 7984 7dbb9280f03c0a315425f1b4f35d43ee ""
   "c:/texlive/2026/texmf-dist/tex/generic/iftex/ifvtex.sty" 1775214912 1057 525c2192b5febbd8c1f662c9468335bb ""
   "c:/texlive/2026/texmf-dist/tex/latex/amsmath/amsbsy.sty" 1775212880 2222 27db7d52163edae53881b71ff62e754e ""
@@ -46,9 +36,9 @@
   "c:/texlive/2026/texmf-dist/web2c/texmf.cnf" 1775212766 43630 e9fa012910491fe5ae08a72c3c2997a7 ""
   "c:/texlive/2026/texmf-var/web2c/euptex/platex.fmt" 1775218577 3652305 a12332408876bc7667020b5cf5eb4baf ""
   "c:/texlive/2026/texmf.cnf" 1775218359 713 e69b156964470283e0530f5060668171 ""
-  "example.tex" 1775287004 2629 c4c90ae62aec9c0f1afd316028898795 ""
-  "example_out/example.aux" 1775287006 32 3985256e7290058c681f74d7a3565a19 "latex"
-  "jpConstract.sty" 1775286787 6123 6fbecf95c15a04c7506c924558c189f8 ""
+  "example.tex" 1775290983 1900 10c8918b80d1493dad5eb7a50c76eb73 ""
+  "example_out/example.aux" 1775290985 32 3985256e7290058c681f74d7a3565a19 "latex"
+  "jpConstract.sty" 1775290983 4842 43c3765d8783aac01262b3b261473973 ""
   (generated)
   "example_out/example.aux"
   "example_out/example.dvi"
