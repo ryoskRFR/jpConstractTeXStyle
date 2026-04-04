@@ -93,30 +93,22 @@
 }
 
 % ========== 条 ==========
-%% 使い方: \jou{目的}
+%% 使い方
+%% 条番号を踏襲: \jou{条の題名}
+%% 条番号を指定: \jou[num]{条の題名}
 \newcommand{\jou}[2][NOOPT]{
   \def\jouopt{#1}
   \def\jounoopt{NOOPT}
-  \stepcounter{jou}
   \vspace{0.8em}
 
   \ifx\jouopt\jounoopt
-    \noindent\hspace{l}
-}
-
-
-\newcommand{\jou}[1]{%
-  \stepcounter{jou}%
-  \vspace{0.8em}%
-  \noindent{\bfseries 第\arabic{jou}条}\quad{\bfseries （#1）}\par
-}
-
-%% 条番号を手動指定したい場合
-%% 使い方: \jounum{10}{権利譲渡の禁止}
-\newcommand{\jounum}[2]{%
-  \setcounter{jou}{#1}%
-  \addtocounter{jou}{-1}%
-  \jou{#2}%
+    % オプションがないなら、番号を踏襲
+    \stepcounter{jou}
+  \else
+    % オプションの番号を指定して更新する
+    \setcounter{jou}{#1}
+  \fi
+  \noindent{\bfseries 第\arabic{jou}条}\quad{\bfseries （#2）}\par
 }
 
 %% ===== 章（複数の条をまとめる場合） =====
