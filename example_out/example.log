@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.02-251130-2.6 (utf8.sjis) (TeX Live 2026) (preloaded format=platex 2026.4.3)  4 APR 2026 17:23
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.02-251130-2.6 (utf8.sjis) (TeX Live 2026) (preloaded format=platex 2026.4.3)  7 APR 2026 13:35
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -276,12 +276,13 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 16.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 11.53198pt on input line 16.
+[1
+
+]
 ***** List of packages loaded by `plautopatch': *****
  plarray.
 *****************************************************
-[1
-
-] (example_out/example.aux)
+[2] (example_out/example.aux)
  ***********
 pLaTeX2e <2023-02-14>+1, based on
 LaTeX2e <2025-11-01>
@@ -291,10 +292,10 @@ L3 programming layer <2026-03-20>
 Here is how much of TeX's memory you used:
  2827 strings out of 467995
  46753 string characters out of 5434491
- 469394 words of memory out of 5000000
+ 470412 words of memory out of 5000000
  31931 multiletter control sequences out of 15000+600000
  634788 words of font info for 74 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 72i,5n,79p,362b,199s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,6n,79p,362b,199s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on example_out/example.dvi (1 page, 2764 bytes).
+Output written on example_out/example.dvi (2 pages, 3388 bytes).
